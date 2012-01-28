@@ -369,7 +369,6 @@ query().sort('lastName.toLowerCase()');
 
 The second query above will sort by last name irrespective of casing.
 
-
 ## Backbone Support and Adding query to Backbone.Collections
 
 query was built with Backbone in mind. Though you may use `query("get('firstName')").is("John")` to effectively work with
@@ -390,3 +389,13 @@ Backbone.Collection.prototype.query = function(field) {
 var activeUsers = userCollection.query('active').is(true).end();
 
 ```
+
+One addition which was added specifically for Backbone (though could be altered to work elsewhere if needed) was the `set()` method.
+Using it you may set properties on all the matching objects.
+
+```js
+userCollection.query('selected').is(true).set({ selected: false }).end();
+```
+
+This will set all currently selected users to not selected. And because this is Backbone, any Views listening to the
+`change:selected` event can update accordingly.
