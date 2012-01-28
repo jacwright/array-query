@@ -13,6 +13,16 @@ Though you can do everything query provides you with the built-in Array methods 
 npm install array-query
 ```
 
+Now you can use it in your node.js project.
+
+```js
+var query = require('array-query');
+
+var firstJacob = query('name').startsWith('Jacob').on(users).pop();
+```
+
+Or just add the query.js file to your web page for use in your client-side JavaScript.
+
 ## querying
 
 Finding objects in an array with query is easy. The API takes a property name first, then checks the value, then you can continue to add properties and checks until the `on` method is called with the array you are querying.
@@ -379,7 +389,7 @@ You may find it useful to add query to the Collection interface so that it is av
 
 ```js
 var Backbone = require('backbone');
-var query = require('query'); // these lines may be skipped when using in the browser
+var query = require('array-query'); // these lines may be skipped when using in the browser
 
 Backbone.Collection.prototype.query = function(field) {
     return query.select(@models).where(field);
