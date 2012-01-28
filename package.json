@@ -1,9 +1,23 @@
 {
 	"name": "array-query",
 	"description": "Provides an interface to pull objects out of a JavaScript array with minimal code. Useful for Backbone collections and similar scenarios.",
-	"url": "https://github.com/jacwright/array-query",
-	"keywords": ["array", "database", "query", "select", "where"],
 	"author": "Jacob Wright <jacwright@gmail.com>",
+	"keywords": ["array", "database", "query", "select", "where"],
 	"version": "0.1.0",
-	"main": "lib/query"
+	"main": "lib/query",
+	"maintainers": [{
+	"name": "Jacob Wright",
+		"email": "jacwright@gmail.com",
+		"web": "http://jacwright.com"
+	}],
+	"contributors": [{
+		"name": "Jacob Wright",
+		"email": "jacwright@gmail.com",
+		"web": "http://jacwright.com"
+	}],
+	"homepage": "https://github.com/jacwright/array-query",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/jacwright/array-query.git"
+	}
 }
