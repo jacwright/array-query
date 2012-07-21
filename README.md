@@ -392,7 +392,7 @@ var Backbone = require('backbone');
 var query = require('array-query'); // these lines may be skipped when using in the browser
 
 Backbone.Collection.prototype.query = function(field) {
-    return query.select(@models).where(field);
+    return query.select(this.models).where(field);
 }
 
 // then when using it remember to use `end()` as this is the `select()` style API.
