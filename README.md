@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jacwright/array-query.png)](http://travis-ci.org/jacwright/array-query)
 query
 =====
 
