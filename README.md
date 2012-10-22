@@ -379,6 +379,26 @@ query().sort('lastName.toLowerCase()');
 
 The second query above will sort by last name irrespective of casing.
 
+### Complex queries
+
+Operators can work on two fields instead of just on a field and a value:
+
+```js
+query('field1').is(query.field('field2'));
+```
+
+Likewise, you can first give a value and then a field:
+
+```js
+query(query.value('value1')).is(query.field('field2'));
+```
+
+Or compare two plain values:
+
+```js
+query(query.value('value1')).is('value2');
+```
+
 ## Backbone Support and Adding query to Backbone.Collections
 
 query was built with Backbone in mind. Though you may use `query("get('firstName')").is("John")` to effectively work with
