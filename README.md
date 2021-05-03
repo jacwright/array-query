@@ -160,7 +160,7 @@ This will match the previously added object since it's colors array *has* the va
 `hasAll` matches objects which have all the provided values in an array.
 
 ```js
-query("colors").hasAll(["red, "blue"]).on(users);
+query("colors").hasAll(["red", "blue"]).on(users);
 ```
 
 This will match all objects which have both "red" and "blue" in their colors array.
