@@ -1,23 +1,43 @@
 {
-	"name": "array-query",
-	"description": "Provides an interface to pull objects out of a JavaScript array with minimal code. Useful for Backbone collections and similar scenarios.",
-	"author": "Jacob Wright <jacwright@gmail.com>",
-	"keywords": ["array", "database", "query", "select", "where"],
-	"version": "0.1.2",
-	"main": "lib/query",
-	"maintainers": [{
-	"name": "Jacob Wright",
-		"email": "jacwright@gmail.com",
-		"web": "http://jacwright.com"
-	}],
-	"contributors": [{
-		"name": "Jacob Wright",
-		"email": "jacwright@gmail.com",
-		"web": "http://jacwright.com"
-	}],
-	"homepage": "https://github.com/jacwright/array-query",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/jacwright/array-query.git"
-	}
+  "name": "array-query",
+  "type": "module",
+  "description": "Provides an interface to pull objects out of a JavaScript array with minimal code. Useful for Backbone collections and similar scenarios.",
+  "author": "Jacob Wright <jacwright@gmail.com>",
+  "keywords": [
+    "array",
+    "database",
+    "query",
+    "select",
+    "where"
+  ],
+  "version": "0.1.2",
+  "main": "src/main.js",
+  "maintainers": [
+    {
+      "name": "Jacob Wright",
+      "email": "jacwright@gmail.com",
+      "web": "http://jacwright.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Jacob Wright",
+      "email": "jacwright@gmail.com",
+      "web": "http://jacwright.com"
+    }
+  ],
+  "homepage": "https://github.com/jacwright/array-query",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jacwright/array-query.git"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "rollup": "^3.19.1"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
+  },
+  "dependencies": {}
 }
