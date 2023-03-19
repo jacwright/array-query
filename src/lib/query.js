@@ -445,13 +445,9 @@ function escapeRegExp(str) {
   return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 }
 
-const queryProvider = function (...params) {
-  return new Query(...params);
-};
+const queryProvider = (...params) => new Query(...params);
 
-const selectProvider = function (...params) {
-  return new Select(...params);
-};
+const selectProvider = (...params) => new Select(...params);
 
 export {
   queryProvider as default,
