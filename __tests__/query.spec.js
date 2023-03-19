@@ -1,4 +1,4 @@
-import { Query } from "../main.js";
+import { Query } from "@/lib/query.js";
 
 describe("Query class tests", () => {
   it("should apply filters and sorts on an input array", async () => {
