@@ -73,6 +73,9 @@ async function generateFilledTableElement(users) {
 }
 
 async function generateFilteredArray(users, stringQueryCalls = "") {
+  if (!stringQueryCalls) {
+    return users;
+  }
   const filteredArray = await eval(stringQueryCalls).on(users);
   return filteredArray;
 }
