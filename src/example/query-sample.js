@@ -1,4 +1,4 @@
-import { Query } from "@/lib/query";
+import { query } from "@/lib/query";
 import { createRandomUser } from "@/example/utils";
 
 const fakeUsers = Array.from({ length: 200 }, createRandomUser);
