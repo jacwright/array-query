@@ -142,8 +142,6 @@ describe("Query class tests", () => {
       fruit.characteristics.includes(["Juicy", "Sweet"])
     );
 
-    console.log(juicyAndSweetFruits);
-
     const myQuery = query("characteristics").hasAll(["Juicy", "Sweet"]);
 
     const result = myQuery.on(objects).length === juicyAndSweetFruits.length;

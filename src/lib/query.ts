@@ -382,7 +382,6 @@ export class Query {
       this._expression.operator = operator;
       this._expression.value = value;
     }
-    console.log(this._expression);
     return this;
   }
 
