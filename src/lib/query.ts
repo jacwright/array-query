@@ -157,7 +157,7 @@ export class Query {
   hasAll(value: any[]) {
     if (this._expression)
       this._expression.template =
-        "%not(%term && %value?.every(value => %term.includes?.(value))";
+        "%not(%term && %value?.every(value => %term.includes?.(...value)))";
     return this._oper("", value);
   }
 
@@ -382,6 +382,7 @@ export class Query {
       this._expression.operator = operator;
       this._expression.value = value;
     }
+    console.log(this._expression);
     return this;
   }
 

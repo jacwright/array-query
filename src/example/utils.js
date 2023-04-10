@@ -9,11 +9,21 @@ export function createRandomUser() {
     lastName,
   ]);
 
+  const pets = faker.helpers.arrayElements([
+    "dog",
+    "cat",
+    "hammster",
+    "snake",
+    "mouse",
+    "spider",
+  ]);
+
   return {
     _id: faker.datatype.uuid(),
     avatar: faker.image.avatar(),
     birthday: faker.date.birthdate(),
     email,
+    pets,
     firstName,
     lastName,
     sex,
