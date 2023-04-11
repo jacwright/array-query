@@ -14,13 +14,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/array-query.umd.js",
-  "module": "./dist/array-query.es.js",
+  "main": "./dist/array-query.umd.cjs",
+  "module": "./dist/array-query.js",
   "types": "./dist/query.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/array-query.js",
+      "require": "./dist/array-query.umd.cjs"
     }
   },
   "scripts": {
