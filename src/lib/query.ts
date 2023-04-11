@@ -157,7 +157,7 @@ export class Query {
   hasAll(value: any[]) {
     if (this._expression)
       this._expression.template =
-        "%not(%term && %value?.every(value => %term.includes?.(...value)))";
+        "%not(%term && %value?.every(item => %term.includes?.(item)))";
     return this._oper("", value);
   }
 

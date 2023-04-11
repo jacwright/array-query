@@ -139,7 +139,7 @@ describe("Query class tests", () => {
 
   it("should hasAll work with array", () => {
     const juicyAndSweetFruits = objects.filter((fruit) =>
-      fruit.characteristics.includes(["Juicy", "Sweet"])
+      fruit.characteristics.includes("Juicy", "Sweet")
     );
 
     const myQuery = query("characteristics").hasAll(["Juicy", "Sweet"]);
