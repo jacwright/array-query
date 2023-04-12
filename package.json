@@ -1,6 +1,6 @@
 {
   "name": "array-query",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Provides an interface to pull objects out of a JavaScript array with minimal code. Useful for Backbone collections and similar scenarios.",
   "type": "module",
   "author": "Jacob Wright <jacwright@gmail.com>",
